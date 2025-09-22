@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switzerland Travel Guide</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/3/32/Matterhorn_from_Domh%C3%BCtte_-_2.jpg') no-repeat center center/cover;
+      height: 70vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+      background: rgba(0,0,0,0.5);
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    /* Navigation */
+    nav {
+      background: #c8102e;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      color: #c8102e;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    /* Cards */
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      margin: 20px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero -->
+  <header>
+    <h1>Discover Switzerland</h1>
+    <p>A land of mountains, lakes, culture, and delicious food</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#cities">Important Cities</a>
+    <a href="#transport">Getting Around</a>
+    <a href="#food">Swiss Cuisine</a>
+    <a href="#dress">Traditional Dress</a>
+  </nav>
+
+  <!-- Cities -->
+  <section id="cities">
+    <h2>Important Cities</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Z%C3%BCrich_-_Grossm%C3%BCnster_IMG_0753_ShiftN.jpg" alt="Zurich">
+        <h3>Zurich</h3>
+        <p>Switzerland’s largest city, Zurich is a global financial hub. Known for its luxury shopping, Lake Zurich, museums, and vibrant nightlife.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Geneva_-_Jet_d%27Eau_-_2005-03-17_IMG_0679.jpg" alt="Geneva">
+        <h3>Geneva</h3>
+        <p>Home to the United Nations and the Red Cross, Geneva is famous for its watchmaking, Lake Geneva, and international diplomacy.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Bern_Aare.jpg" alt="Bern">
+        <h3>Bern</h3>
+        <p>The capital of Switzerland, Bern’s Old Town is a UNESCO World Heritage site, with medieval arcades, fountains, and the famous Bear Park.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Lucerne_and_Lake_Lucerne.jpg" alt="Lucerne">
+        <h3>Lucerne</h3>
+        <p>Surrounded by mountains, Lucerne is known for its Chapel Bridge, medieval old town, and beautiful lake views.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Interlaken_and_the_Jungfrau.jpg" alt="Interlaken">
+        <h3>Interlaken</h3>
+        <p>A famous adventure sports hub between two lakes, Interlaken is the gateway to the Jungfrau region of the Swiss Alps.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transport -->
+  <section id="transport">
+    <h2>How to Move Around</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Trains</h3>
+        <p>The Swiss Federal Railways (SBB) is efficient, punctual, and scenic. Famous routes include the Glacier Express and Bernina Express.</p>
+      </div>
+      <div class="card">
+        <h3>Trams & Buses</h3>
+        <p>Cities like Zurich, Basel, and Geneva have extensive tram networks. Buses connect rural areas and mountain villages.</p>
+      </div>
+      <div class="card">
+        <h3>Boats & Cars</h3>
+        <p>Lake ferries are scenic ways to travel, especially on Lake Geneva and Lake Lucerne. Cars are useful in alpine villages not connected by trains.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food -->
+  <section id="food">
+    <h2>Famous Swiss Food</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Fondue.jpg" alt="Fondue">
+        <h3>Fondue</h3>
+        <p>A classic dish of melted cheese served in a communal pot, eaten with bread cubes.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Raclette_cheese_and_potatoes.jpg" alt="Raclette">
+        <h3>Raclette</h3>
+        <p>Melted cheese scraped onto potatoes, pickles, and onions – a cozy Alpine dish.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/R%C3%B6sti.jpg" alt="Rösti">
+        <h3>Rösti</h3>
+        <p>A crispy potato pancake, originally a Swiss-German breakfast, now a national favorite.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Lindt_chocolates.jpg" alt="Swiss Chocolate">
+        <h3>Swiss Chocolate</h3>
+        <p>Famous worldwide, Swiss chocolate brands like Lindt and Toblerone are global icons.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dress -->
+  <section id="dress">
+    <h2>Traditional Swiss Dress</h2>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Swiss_traditional_clothing.jpg" alt="Swiss Dress">
+      <p>Traditional Swiss clothing varies by region:</p>
+      <ul>
+        <li><b>Women:</b> Dresses with aprons, embroidered blouses, lace, and corset-style bodices. Often decorated with floral patterns.</li>
+        <li><b>Men:</b> Embroidered shirts, breeches, suspenders, and felt hats. In alpine regions, lederhosen and wool jackets are common.</li>
+      </ul>
+      <p>These costumes are worn during festivals, folk dances, and national events such as the Swiss National Day (August 1st).</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+ 
+ <footer>
+    <p>© 2025 Switzerland Travel Guide | Made by Shrithan Nukala and team </p>
+  </footer>
+</body>
+</html>
